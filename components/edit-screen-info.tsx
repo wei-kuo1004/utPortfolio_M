@@ -5,7 +5,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <YStack>
       <YStack alignItems="center" marginHorizontal="$6">
-        <H4>Open up the code for this screen:</H4>
+        <H4>資訊頁面:</H4>
         <YStack borderRadius="$3" marginVertical="$1">
           <Paragraph>{path}</Paragraph>
         </YStack>
