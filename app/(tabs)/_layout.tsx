@@ -12,6 +12,7 @@ function TabBarIcon(props: {
 export default function TabLayout() {
   return (
     <Tabs
+      initialRouteName="home"
       screenOptions={{
         tabBarActiveTintColor: 'black',
       }}>
@@ -48,6 +49,13 @@ export default function TabLayout() {
         options={{
           title: '使用者',
           tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
+          headerRight: () => (
+            <Link href="/login" asChild>
+              <Pressable style={({ pressed }) => [{ opacity: pressed ? 0.5 : 1 }]}>
+                <FontAwesome name="sign-out" size={25} color="gray" style={styles.headerRight} />
+              </Pressable>
+            </Link>
+          ),
         }}
       />
       <Tabs.Screen

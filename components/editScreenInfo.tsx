@@ -5,13 +5,10 @@ export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <YStack>
       <YStack alignItems="center" marginHorizontal="$6">
-        <H4>資訊頁面:</H4>
+        <H4>工作使我快樂</H4>
         <YStack borderRadius="$3" marginVertical="$1">
-          <Paragraph>{path}</Paragraph>
+          <Paragraph>"這個路徑到底怎麼分的"</Paragraph>
         </YStack>
-        <Paragraph>
-          Change any of the text, save the file, and your app will automatically update.
-        </Paragraph>
       </YStack>
     </YStack>
   );
